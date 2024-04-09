@@ -95,21 +95,21 @@ begin
       begin
        panel1.color:=clred;
        edt1.color:=clred;
-       edt1.text:='COLOR ROJO';
+       edt1.text:='COLOR ROJO (RED)';
 
       end;
         1:
       begin
        panel1.color:=clyellow;
           edt1.color:=clYELLOW;
-       edt1.text:='COLOR AMARILLO';
+       edt1.text:='COLOR AMARILLO (YELLOW)';
 
       end;
         2:
           begin
           panel1.color:=clgreen;
           edt1.color:=clGREEN;
-       edt1.text:='COLOR VERDE';
+       edt1.text:='COLOR VERDE (GREEN)';
        end;
 
 
