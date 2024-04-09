@@ -1,0 +1,137 @@
+object Form1: TForm1
+  Left = 1158
+  Height = 565
+  Top = 173
+  Width = 646
+  Caption = 'Paneles'
+  ClientHeight = 565
+  ClientWidth = 646
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.3'
+  object rdgPanel: TRadioGroup
+    Left = 72
+    Height = 105
+    Top = 40
+    Width = 185
+    AutoFill = True
+    Caption = 'Panel'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 85
+    ClientWidth = 181
+    Items.Strings = (
+      'Panel 1'
+      'Panel 2'
+    )
+    OnClick = rdgPanelClick
+    TabOrder = 0
+  end
+  object rdgColor: TRadioGroup
+    Left = 384
+    Height = 105
+    Top = 40
+    Width = 185
+    AutoFill = True
+    Caption = 'Color'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 85
+    ClientWidth = 181
+    Items.Strings = (
+      'Rojo'
+      'Amarillo'
+      'Verde'
+    )
+    OnClick = rdgColorClick
+    TabOrder = 1
+  end
+  object btnInicializar: TButton
+    Left = 248
+    Height = 41
+    Top = 216
+    Width = 147
+    Caption = 'Inicializar'
+    TabOrder = 2
+    OnClick = btnInicializarClick
+  end
+  object gpbPaneles: TGroupBox
+    Left = 73
+    Height = 248
+    Top = 272
+    Width = 515
+    Caption = 'Paneles'
+    ClientHeight = 228
+    ClientWidth = 511
+    TabOrder = 3
+    object Panel1: TPanel
+      Left = 32
+      Height = 130
+      Top = 48
+      Width = 162
+      Color = clWhite
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 0
+    end
+    object Panel2: TPanel
+      Left = 312
+      Height = 128
+      Top = 42
+      Width = 162
+      Color = clWhite
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 88
+      Height = 15
+      Top = 15
+      Width = 40
+      Caption = 'Panel 1'
+      Font.CharSet = ANSI_CHARSET
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 376
+      Height = 15
+      Top = 15
+      Width = 40
+      Caption = 'Panel 2'
+      Font.CharSet = ANSI_CHARSET
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object edt1: TEdit
+    Left = 191
+    Height = 22
+    Top = 179
+    Width = 264
+    Alignment = taCenter
+    Color = clAqua
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnChange = edt1Change
+  end
+end
